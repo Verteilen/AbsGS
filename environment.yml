@@ -15,5 +15,10 @@ dependencies:
   - pymeshlab
   - open3d
   - pip:
+    # 使用最新的 PyTorch 支援 RTX 5090
+    - torch==2.3.0+cu118 --index-url https://download.pytorch.org/whl/cu118
+    - torchvision==0.18.0+cu118 --index-url https://download.pytorch.org/whl/cu118
+    - torchaudio==2.3.0+cu118 --index-url https://download.pytorch.org/whl/cu118
+    # AbsGS 專用的 CUDA 擴展
     - submodules/diff-gaussian-rasterization-abs
     - submodules/simple-knn
